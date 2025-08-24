@@ -141,8 +141,7 @@ conversation-bot/
 ├── src/
 │   └── vocabulary_analyzer.py  # Vocabulary analysis module
 ├── config/
-│   ├── personas.json           # AI character configurations
-│   └── settings.json           # App settings
+│   └── personas.json           # AI character configurations
 ├── run_dev.sh                  # Development script
 ├── run_prod.sh                 # Production script
 └── requirements.txt            # Dependencies
