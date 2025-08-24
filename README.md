@@ -1,7 +1,10 @@
 # 🗾 AI Voice Chat - Japanese Conversation Learning with Vocabulary Tracking
 
-Real-time voice conversation app for Japanese language learning using OpenAI's Realtime API.  
-Practice Japanese through natural conversations while automatically analyzing and tracking vocabulary.
+Practice speaking Japanese with AI native speakers and build your vocabulary through real conversations.  
+
+**Core Purpose**: Have natural conversations with Japanese-speaking AI characters while the app automatically extracts and saves vocabulary words that appear during your chat. Review these words later as flashcards to reinforce your learning.
+
+Powered by OpenAI's Realtime API for authentic, low-latency voice interactions.
 
 ## ✨ Key Features
 
@@ -103,12 +106,15 @@ Open browser at http://localhost:8501
 
 ## 💬 How to Use
 
-1. **Connect**: Enter OpenAI API key and click "Connect"
-2. **Select Character**: Choose an AI conversation partner
-3. **Start Conversation**: Click "Start Conversation"
-4. **Speak Naturally**: Have a conversation in Japanese
-5. **Track Vocabulary**: View real-time vocabulary in the right panel
-6. **Export**: Download your vocabulary list for study
+1. **Connect**: Enter your OpenAI API key and click "Connect"
+2. **Choose Your Partner**: Select an AI character that matches your learning style
+3. **Start Speaking**: Click "Start Conversation" and speak naturally in Japanese
+4. **Build Vocabulary**: As you converse, new words automatically appear in the vocabulary panel with:
+   - Furigana (reading hints)
+   - Korean translations
+   - JLPT level indicators
+5. **Filter by Level**: Use the dropdown to focus on words at your level
+6. **Review Later**: Export your vocabulary list as a study sheet for flashcard review
 
 ## 🎯 Vocabulary Filter Options
 
@@ -152,23 +158,60 @@ conversation-bot/
 
 ## 🐛 Troubleshooting
 
-### No Audio Output
+<details>
+<summary><strong>No Audio Output</strong></summary>
+
 - Verify PyAudio installation: `pip install pyaudio`
-- Check speaker settings
-- Review console logs
+- Check speaker settings and volume
+- Review console logs for audio errors
+- Try refreshing the browser page
+- On macOS: `brew install portaudio` then reinstall pyaudio
+</details>
 
-### Connection Issues
-- Verify API key
-- Check Realtime API access
-- Confirm network connectivity
+<details>
+<summary><strong>Connection Issues</strong></summary>
 
-### Vocabulary Not Showing
-- Ensure Japanese conversation
-- Verify GPT-4 API access
+- Verify your OpenAI API key is correct
+- Check you have Realtime API beta access
+- Confirm stable internet connection
+- Try disconnecting and reconnecting
+- Check browser console for WebSocket errors
+</details>
+
+<details>
+<summary><strong>Vocabulary Not Showing</strong></summary>
+
+- Ensure you're having a Japanese conversation
+- Verify GPT-4 API access (required for analysis)
+- Check the vocabulary panel is enabled (checkbox in sidebar)
+- Wait a moment after speaking - analysis takes 1-2 seconds
 - Check browser console for errors
+</details>
 
-### Debug Mode
+<details>
+<summary><strong>Microphone Not Working</strong></summary>
+
+- Allow microphone permissions in browser
+- Check microphone is selected correctly in system settings
+- Try using Chrome or Edge browser
+- Test microphone in other apps first
+- Restart browser if permissions were recently changed
+</details>
+
+<details>
+<summary><strong>Debug Mode</strong></summary>
+
 - Enable debug mode in sidebar's "Developer Options" for verbose logging
+- Check console output for detailed connection and audio information
+- Useful for reporting issues with specific error messages
+</details>
+
+## ⚠️ Known Issues
+
+- **Clear Chat Button**: Due to Streamlit's state management, the Clear Chat button may not immediately clear messages from the display. Messages will be cleared when the next interaction occurs. This is a known Streamlit limitation.
+- **Multiple Voice Sessions**: Occasionally, multiple voice responses may overlap. If this happens, disconnect and reconnect.
+- **Voice Recognition Delay**: There may be a 1-2 second delay before your speech is recognized and processed.
+- **Browser Compatibility**: Best performance on Chrome and Edge. Safari and Firefox may have audio issues.
 
 ## 🤝 Contributing
 
