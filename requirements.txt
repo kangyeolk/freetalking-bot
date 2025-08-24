@@ -1,0 +1,27 @@
+# Core dependencies
+streamlit>=1.40.0
+openai>=1.57.0
+python-dotenv>=1.0.0
+
+# Audio & WebSocket
+pyaudio>=0.2.14
+websocket-client>=1.8.0
+
+# Data processing
+pandas>=2.2.0
+numpy>=2.0.0
+
+# Japanese text processing (optional - for future use)
+# mecab-python3>=1.0.10
+# fugashi>=1.4.0
+# unidic-lite>=1.0.8
+# pykakasi>=2.3.0
+
+# Translation (currently using OpenAI instead)
+# googletrans==4.0.0rc1
+
+# Development tools (optional)
+# pytest>=8.3.0
+# black>=24.10.0
+# isort>=5.13.0
+# mypy>=1.14.0

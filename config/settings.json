@@ -1,0 +1,59 @@
+{
+  "app": {
+    "name": "Python 회화 학습 앱",
+    "version": "1.0.0",
+    "debug": false
+  },
+  "ai": {
+    "default_model": "gpt-4",
+    "temperature": 0.7,
+    "max_tokens": 500,
+    "timeout": 30
+  },
+  "speech": {
+    "recognition": {
+      "language": "ko-KR",
+      "timeout": 5,
+      "phrase_time_limit": 5,
+      "energy_threshold": 300
+    },
+    "synthesis": {
+      "default_engine": "gtts",
+      "rate": 150,
+      "volume": 0.9,
+      "language": "ko"
+    }
+  },
+  "learning": {
+    "levels": ["초급", "중급", "고급"],
+    "categories": [
+      "일상 대화",
+      "비즈니스",
+      "여행",
+      "쇼핑",
+      "레스토랑",
+      "의료",
+      "교육"
+    ],
+    "languages": [
+      "영어",
+      "일본어",
+      "중국어",
+      "스페인어",
+      "프랑스어"
+    ],
+    "session": {
+      "default_duration_minutes": 15,
+      "max_history_messages": 10
+    }
+  },
+  "ui": {
+    "theme": "light",
+    "chat_height": 400,
+    "sidebar_expanded": true,
+    "auto_scroll": true
+  },
+  "storage": {
+    "logs_dir": "logs"
+  }
+}
