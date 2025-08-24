@@ -212,9 +212,29 @@ conversation-bot/
 - **Voice Recognition Delay**: There may be a 1-2 second delay before your speech is recognized and processed.
 - **Browser Compatibility**: Best performance on Chrome and Edge. Safari and Firefox may have audio issues.
 
+## 📋 TODO / Roadmap
+
+### High Priority 🔴
+- [ ] **Database Integration**: Save conversation history and vocabulary lists with SQLite
+- [ ] **Fix Clear Chat**: Resolve Streamlit state management issue
+- [ ] **Export to Anki**: Generate flashcard decks from vocabulary
+- [ ] **Prevent Audio Overlap**: Fix multiple voice sessions issue
+
+### Medium Priority 🟡
+- [ ] **User Profiles**: Track learning progress over time
+- [ ] **Example Sentences**: Add context sentences for each vocabulary word
+- [ ] **Spaced Repetition**: Implement review scheduling for vocabulary
+- [ ] **Learning Analytics**: Show vocabulary growth and speaking time stats
+
+### Nice to Have 🟢
+- [ ] **Mobile App**: React Native version for on-the-go practice
+- [ ] **Scenario Mode**: Structured conversations (restaurant, shopping, etc.)
+- [ ] **Grammar Detection**: Identify and explain grammar patterns
+- [ ] **Offline Vocabulary**: Cache vocabulary for offline review
+
 ## 🤝 Contributing
 
-Please submit bug reports and feature requests via Issues.
+Please submit bug reports and feature requests via Issues. Check the TODO list above for areas where contributions are welcome!
 
 ## 📄 License
 
